@@ -1,5 +1,5 @@
 # @wi2/use-list
-Extends useReducer and useState with common helper methods
+Hooks to manage list
 
 **Advantages**
 - easy to use
