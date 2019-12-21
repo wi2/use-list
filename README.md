@@ -1,12 +1,11 @@
 # @wi2/use-list
 Hooks to manage list
 
-**Advantages**
+**Motivation**
+- very light && performant (use smart hook from @wi2/hooks-plus)
+- use generic list
+- extends reducer with mixins method
 - easy to use
-- add your own method
-- easy to test
-- DRY principles (Don't repeat yourself)
-
 
 ## Install
 
@@ -21,7 +20,12 @@ npm install @wi2/use-list --save
 import useList from '@wi2/use-list'
 
 function MyComponent() {
-  const [state, add, remove, update] = useList() // custom list reducder
+  const initValue = []
+  const options = {
+    // smart: lodash.debounce,
+  }
+  const [state, add, remove, update] = useList(initValue, options) // custom list reducder
+  // const [state, add, remove, update] = useList() // same in this example
 
   const input = useRef(null) // ref for add input text
   useEffect(() => {

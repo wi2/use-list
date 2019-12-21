@@ -1,5 +1,5 @@
 import { useReducer } from '@wi2/hooks-plus'
-import reducer from './reducer'
+import reducer, { initReducer } from './reducer'
 import { StateList } from './interfaces'
 
 // declare helper methods
@@ -17,12 +17,12 @@ const updateTolist = (_: StateList, dispatch: any, [action]: any[]) => {
 
 
 // the custom hooks
-export function useListDefault(initialForm: StateList = [], methods: any[] = []): any[] {
-  return useReducer(reducer, initialForm, methods)
+export function useListDefault(initialForm: StateList = [], config: any, methods: any[] = []): any[] {
+  return useReducer(reducer, initialForm, config, methods, initReducer)
 }
 
-function useList(initState = [], helpers = []): any[] {
-  const hook = useListDefault(initState, [addTolist, removeTolist, updateTolist, ...helpers])
+function useList(initState = [], config: any, helpers = []): any[] {
+  const hook = useListDefault(initState, config, [addTolist, removeTolist, updateTolist, ...helpers])
   hook.splice(1, 1) // remove dispatch
   return hook
 }

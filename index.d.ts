@@ -1,3 +1,3 @@
-export default function useList(initialForm: StateList = [], methods: any[] = []): any[]
+export default function useList(initialForm: StateList = [], options: any, methods: any[] = []): any[]
 
-export declare function useListDefault(initialForm: StateList = [], methods: any[] = []): any[]
+export declare function useListDefault(initialForm: StateList = [], options: any, methods: any[] = []): any[]

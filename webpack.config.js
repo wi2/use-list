@@ -25,7 +25,7 @@ const MODULE = {
 }
 const OUTPUT = {
   filename: 'index.js',
-  libraryTarget: 'umd',
+  libraryTarget: 'commonjs2',
   library: '@wi2/use-list',
   path: DESTINATION,
 }

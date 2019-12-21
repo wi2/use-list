@@ -1,6 +1,6 @@
 {
   "name": "@wi2/use-list",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "Hooks to manage list",
   "module": "dist/index.js",
   "main": "dist/index.js",
@@ -18,7 +18,7 @@
     "url": "git+https://github.com/wi2/use-list.git"
   },
   "peerDependencies": {
-    "@wi2/hooks-plus": ">=1.0.0",
+    "@wi2/hooks-plus": ">=2.0.1",
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"
   },
@@ -49,7 +49,7 @@
     "webpack-external-react": "^1.1.12"
   },
   "dependencies": {
-    "@wi2/hooks-plus": "^1.0.0",
+    "@wi2/hooks-plus": "^2.0.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   },

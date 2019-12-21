@@ -3,13 +3,14 @@ export interface ActionList {
   type?: string
   id?: string
   ids?: string[]
+  atIndex: number
   action?: object | undefined
 }
 
 export interface Row {
   _id: string
-  createdAt: Date
-  updatedAt: Date
+  _createdAt: Date
+  _updatedAt: Date
   action?: object | undefined
 }
 
